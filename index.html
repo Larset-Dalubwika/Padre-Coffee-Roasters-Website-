@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./pcr.css">
+</head>
+
+<body>
+    <header>
+        <section class="upper-header">
+            <img src="./assets/iconography/logo.png" alt="Logo" class="logo">
+            <p class="brand">Padre Coffee Roasters</p>
+            <nav class="header-nav">
+                <a href="./menu.html" class="nav-link">Menu</a>
+                <a href="./order.html" class="nav-link">Order</a>
+                <a href="./about.html" class="nav-link">About</a>
+
+                <div class="nav2">
+                    <button class="btn-dark">Pickup</button>
+                    <button>Delivery</button>
+                    <button class="btn-borderless">Log In</button>
+                    <!-- <button>Cart (2)</button> -->
+                </div>
+            </nav>
+        </section>
+
+        <!-- <section class="lower-header">
+            <div class="search-bar">
+                <p class="search-icon">⌕</p>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <button class="btn-dark">Pickup</button>
+            <button>Delivery</button>
+            <button class="btn-borderless">Log In</button>
+            <button>Cart (2)</button>
+        </section> -->
+
+    </header>
+
+    <main>
+        <div class="filler"></div>
+        <section class="hero">
+            <section class="left-hero">
+                <h1 class="hero-header">Tara, kape tayo!</h1>
+                <p class="subtext">Drink and Chill.</p>
+
+                <!-- <p class="chooseordertype">Choose Order Type</p>
+
+                <section class="ordertypes">
+                    <section class="upper-ot">
+                        <button class="btn-dark">Pickup</button>
+                        <button>Delivery</button>
+                    </section>
+                    <button class="btn-dark" id="start-order">START ORDER</button>
+                </section> -->
+            </section>
+
+            <section class="right-hero">
+                <div class="splash-container">
+                    <img src="./assets/splash-images/splash.jpg" alt="Splash Image" class="splash-img">
+                </div>
+            </section>
+        </section>
+
+        <section class="menu-preview">
+            <h2 class="menu-header">Menu</h2>
+            <section class="menu-track-container">
+                <div id="menu-track" data-mouse-down-at="0" data-prev-percentage="0">
+                    <div class="menu-track-item">
+                        <div class="category-img-container">
+                            <img src="./assets/menu-thumbnails/menu-category-thumbnails/espresso.jpg" alt="Espresso" class="category-img">
+                        </div>
+                        <p class="category-name">Espresso</p>
+                    </div>
+
+                    <div class="menu-track-item">
+                        <div class="category-img-container">
+                            <img src="./assets/menu-thumbnails/menu-category-thumbnails/brew-bar.jpeg" alt="Brew Bar" class="category-img">
+                        </div>
+                        <p class="category-name">Brew Bar</p>
+                    </div>
+
+                    <div class="menu-track-item">
+                        <div class="category-img-container">
+                            <img src="./assets/menu-thumbnails/menu-category-thumbnails/cold-brew.jpeg" alt="Cold Brew" class="category-img">
+                        </div>
+                        <p class="category-name">Cold Brew</p>
+                    </div>
+
+                    <div class="menu-track-item">
+                        <div class="category-img-container">
+                            <img src="./assets/menu-thumbnails/menu-category-thumbnails/not-coffee.jpeg" alt="Not Coffee" class="category-img">
+                        </div>
+                        <p class="category-name">Not Coffee</p>
+                    </div>
+
+                    <div class="menu-track-item">
+                        <div class="category-img-container">
+                            <img src="./assets/menu-thumbnails/menu-category-thumbnails/pastries.jpeg" alt="Pastries" class="category-img">
+                        </div>
+                        <p class="category-name">Pastries</p>
+                    </div>
+
+                    <div class="menu-track-item">
+                        <div class="category-img-container">
+                            <img src="./assets/menu-thumbnails/menu-category-thumbnails/retail-beans.jpeg" alt="Retail Beans" class="category-img">
+                        </div>
+                        <p class="category-name">Retail Beans</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="./track.js"></script>
+</body>
+
+</html>
