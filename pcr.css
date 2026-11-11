@@ -25,7 +25,7 @@ body {
     background-color: var(--bg);
     line-height: 1.6;
     margin: 0 auto;
-    /* color: var(--dark); */
+    color: var(--dark);
 }
 
 header {
@@ -55,7 +55,7 @@ header {
 
 }
 
-.upper-header > :last-child {
+.upper-header> :last-child {
     margin-left: auto;
     display: flex;
     flex-direction: row;
@@ -173,6 +173,7 @@ header {
     /* transform: translateY(-1px); */
 }
 
+.a,
 button {
     height: 40px;
     width: 90px !important;
@@ -346,7 +347,7 @@ button:active {
     padding-right: 10px;
 }
 
-.menu-track-item:hover > .category-name {
+.menu-track-item:hover>.category-name {
     font-weight: 700;
 }
 
@@ -377,7 +378,7 @@ button:active {
 .sidebarformat {
     display: flex;
     width: 100%;
-    
+
 }
 
 .sidebar {
@@ -495,3 +496,98 @@ button:active {
     font-size: 1.2rem;
     line-height: 1;
 }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 500px;
+    /* background-color: red; */
+    margin: auto;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+.form-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 7px 7px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text);
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    transition: all 0.3s ease;
+    outline: none;
+    background-color: none;
+}
+
+.form-input::placeholder {
+    font-weight: 500;
+}
+
+.form-input:focus {
+    height: 50px;
+}
+
+.inner-container {}
+
+.maxwidth {
+    width: 100% !important;
+}
+
+.forgot-pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--dark);
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.forgot-pass:hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.sign-in {
+    margin-top: 10px;
+}
+
+.btn-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--dark);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.8rem;
+
+    transition: all 0.2s ease;
+}
+
+.btn-signup:hover {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
