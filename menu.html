@@ -14,6 +14,16 @@
 </head>
 
 <body>
+    <script>
+        let isDark = false;
+
+        function toggleDarkMode() {
+            isDark = !isDark;
+            document.body.style.background = isDark ? "var(--dark)" : "var(--bg)";
+            document.body.style.color = isDark ? "var(--bg)" : "var(--dark)";
+        }
+    </script>
+    
     <header>
         <section class="upper-header">
             <img src="./assets/iconography/logo.png" alt="Logo" class="logo">
@@ -26,8 +36,10 @@
                 <div class="nav2">
                     <button class="btn-dark">Pickup</button>
                     <button>Delivery</button>
-                    <button class="btn-borderless">Log In</button>
+                     <a href="login.html" class="a btn-borderless">Log In</a>
                     <!-- <button>Cart (2)</button> -->
+
+                    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
                 </div>
             </nav>
         </section>
@@ -61,7 +73,8 @@
         <section class="not-sidebar">
             <section id="espresso">
                 <h2 class="menu-catheader">ESPRESSO</h2>
-                <p class="menu-catdesc">Hot and iced drinks made on an espresso base. This is the core of the menu, for customers who want a classic shot-based coffee, either straight or with steamed milk.</p>
+                <p class="menu-catdesc">Hot and iced drinks made on an espresso base. This is the core of the menu, for
+                    customers who want a classic shot-based coffee, either straight or with steamed milk.</p>
                 <div class="col-3">
                     <div class="menu-item">
                         <div class="menuitem-tn-container">
@@ -137,7 +150,8 @@
 
                     <div class="menu-item">
                         <div class="menuitem-tn-container">
-                            <img src="./assets/menu-thumbnails/menu-item-thumbnails/flat-white.jpeg" class="menuitem-tn">
+                            <img src="./assets/menu-thumbnails/menu-item-thumbnails/flat-white.jpeg"
+                                class="menuitem-tn">
 
                         </div>
                         <h2 class="menuitem-name">Flat White</h2>
@@ -149,7 +163,8 @@
 
                     <div class="menu-item">
                         <div class="menuitem-tn-container">
-                            <img src="./assets/menu-thumbnails/menu-item-thumbnails/cappuccino.jpeg" class="menuitem-tn">
+                            <img src="./assets/menu-thumbnails/menu-item-thumbnails/cappuccino.jpeg"
+                                class="menuitem-tn">
 
                         </div>
                         <h2 class="menuitem-name">Cappuccino</h2>
