@@ -23,7 +23,7 @@
             document.body.style.color = isDark ? "var(--bg)" : "var(--dark)";
         }
     </script>
-    
+
     <header>
         <section class="upper-header">
             <img src="./assets/iconography/logo.png" alt="Logo" class="logo">
@@ -36,7 +36,7 @@
                 <div class="nav2">
                     <button class="btn-dark">Pickup</button>
                     <button>Delivery</button>
-                     <a href="login.html" class="a btn-borderless">Log In</a>
+                    <a href="login.html" class="a login-btn">Log In</a>
                     <!-- <button>Cart (2)</button> -->
 
                     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
@@ -44,49 +44,42 @@
             </nav>
         </section>
 
-        <!-- <section class="lower-header">
-            <div class="search-bar">
-                <p class="search-icon">⌕</p>
-                <input type="text" placeholder="Search...">
-            </div>
-
-            <button class="btn-dark">Pickup</button>
-            <button>Delivery</button>
-            <button class="btn-borderless">Log In</button>
-            <button>Cart (2)</button>
-        </section> -->
-
     </header>
     <div class="filler"></div>
 
     <main class="sidebarformat">
         <aside class="sidebar">
-            <a class="sidebar-nav active" href="#espresso">Espresso</a>
-            <!-- <a class="sidebar-nav" href="#brew-bar">Brew Bar</a> -->
-            <a class="sidebar-nav" href="#cold-brew">Cold Brew</a>
+            <a class="sidebar-nav active" href="#coffee">Coffee</a>
+            <a class="sidebar-nav" href="#iced-coffee">Iced Coffee</a>
             <a class="sidebar-nav" href="#non-coffee">Non-Coffee</a>
-            <a class="sidebar-nav" href="#cold-press">Cold Press</a>
-            <a class="sidebar-nav" href="#pastries">Pastries</a>
-            <a class="sidebar-nav" href="#retail-beans">Retail Beans</a>
+            <a class="sidebar-nav" href="#smoothies-and-cold-press">Smoothies and Cold Press</a>
+            <a class="sidebar-nav" href="#pasta">Pasta</a>
+            <a class="sidebar-nav" href="#steak-and-rice">Steak & Rice</a>
+            <a class="sidebar-nav" href="#all-day-breakfast">All-Day Breakfast</a>
+            <a class="sidebar-nav" href="#western-style-breakfast">Western Style Breakfast</a>
+            <a class="sidebar-nav" href="#burger-and-sandwich">Burger and Sandwich</a>
         </aside>
 
         <section class="not-sidebar">
             <section id="espresso">
-                <h2 class="menu-catheader">ESPRESSO</h2>
+                <h2 class="menu-catheader">COFFEE</h2>
                 <p class="menu-catdesc">Hot and iced drinks made on an espresso base. This is the core of the menu, for
                     customers who want a classic shot-based coffee, either straight or with steamed milk.</p>
-                <div class="col-3">
-                    <div class="menu-item">
-                        <div class="menuitem-tn-container">
-                            <img src="./assets/menu-thumbnails/menu-item-thumbnails/espresso.jpeg" class="menuitem-tn">
+                <div class="col-3 gap-m">
+                    <form action="./select-item.html">
+                        <a href="./select-item.html?item=espresso" class="menu-item">
+                            <div class="menuitem-tn-container">
+                                <img src="./assets/menu-thumbnails/menu-item-thumbnails/espresso.jpeg"
+                                    class="menuitem-tn">
 
-                        </div>
-                        <h2 class="menuitem-name">Espresso</h2>
-                        <div class="menuitem-short-info">
-                            <p class="preview-price">₱80</p>
-                            <p class="rating">★★★⯪☆</p>
-                        </div>
-                    </div>
+                            </div>
+                            <h2 class="menuitem-name">Espresso</h2>
+                            <div class="menuitem-short-info">
+                                <p class="preview-price">₱80</p>
+                                <p class="rating">★★★⯪☆</p>
+                            </div>
+                        </a>
+                    </form>
 
                     <div class="menu-item">
                         <div class="menuitem-tn-container">
